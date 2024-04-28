@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basic user card</title>
+</head>
+<body class="flex flex-row">
+    <section class="user-card flex-col">
+        <header class="flex-end flex-col">
+            <div class="user-profile-image">
+                <img src="img/batman.png" alt="Batman" width="128" height="128" />
+            </div>
+        </header>
+        <main class="flex-1">
+            <article class="flex flex-col">
+                <div class="user-info flex-start flex-col">
+                    <div class="user-name">Batman</div>
+                    <div class="user-location">
+                        <img src="img/location-icon.svg" alt="Location icon" class="filter-location" width="15" height="15" />
+                        <span>Gotham City</span>
+                    </div>
+                    <div class="user-description gray">
+                        <span>
+                            Bruce Wayne, el enigmático multimillonario de Ciudad Gótica, es un símbolo de poder y misterio.
+                            Detrás de su fachada de hombre de negocios se oculta un vigilante dedicado a combatir el crimen como Batman.
+                        </span>
+                    </div>
+                </div>
+                <div class="user-social flex flex-row">
+                    <a href="https://www.github.com/mangelgl" target="_blank"><button>Follow</button></a>
+                </div>
+            </article>
+        </main>
+        <footer class="flex flex-row">
+            <div class="posts flex flex-col">
+                <div class="user-info-title gray">Posts</div>
+                <div class="user-info-content">
+                    <img src="img/posts-icon.svg" alt="Posts icon" class="filter-gray" width="15" height="15" /> 100.000
+                </div>
+            </div>
+            <div class="followers flex flex-col">
+                <div class="user-info-title gray">Followers</div>
+                <div class="user-info-content">
+                    <img src="img/user-icon.svg" alt="Followers icon" class="filter-gray" width="15" height="15" /> 8.000
+                </div>
+            </div>
+            <div class="following flex flex-col">
+                <div class="user-info-title gray">Following</div>
+                <div class="user-info-content">
+                    <img src="img/user-icon.svg" alt="Following icon" class="filter-gray" width="15" height="15" /> 10.000
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
