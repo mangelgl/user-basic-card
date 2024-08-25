@@ -1,13 +1,181 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+	font-family: 'Poppins';
+	src: url('../public/fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+	font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../public/fonts/Montserrat/static/Montserrat-Regular.woff2')
+		format('woff2');
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+		to left bottom,
+		#ff3867,
+		#ff655b,
+		#ff8a58,
+		#ffaa60,
+		#ffc873
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.user-card {
+	display: flex;
+	width: 450px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px 0px rgba(90, 90, 90, 0.75),
+		-3px -3px 5px 0px rgba(90, 90, 90, 0.75);
+	overflow: hidden;
+}
+
+/** CABECERA */
+header {
+	height: 200px;
+	background: no-repeat center url('../public/img/BlueTechBackground.svg');
+	background-size: cover;
+	border-bottom: 4px solid #cb21cd;
+}
+
+.user-profile-image {
+	position: relative;
+	top: 30px;
+	width: 130px;
+	height: 130px;
+	background-color: white;
+	border-radius: 100%;
+	border: 4px solid #cb21cd;
+}
+
+.user-location {
+	color: #a05d5d;
+}
+
+/** CONTENIDO */
+article {
+	height: 100%;
+}
+
+.user-info {
+	padding: 0px 30px 10px 30px;
+}
+
+.user-name {
+	font-size: 2rem;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.user-location {
+	margin-bottom: 25px;
+	font-style: italic;
+}
+
+.user-description {
+	font-size: 1rem;
+}
+
+.user-social {
+	width: 100%;
+	height: 20%;
+}
+
+.user-social button {
+	width: 130px;
+	padding: 10px;
+	border: 2px solid #2d7cbf;
+	border-radius: 30px;
+	background-color: #ffffff;
+	color: #2d7cbf;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.user-social button:hover {
+	background-color: #4e96d6;
+	color: white;
+}
+
+.user-social button:active {
+	transform: translateY(2px);
+}
+
+/** FOOTER */
+footer {
+	width: 100%;
+}
+
+footer > div {
+	flex-grow: 1;
+	padding: 10px;
+	border-top: 1px solid #dddddd;
+}
+
+.followers {
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+
+/** GENERALES */
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-1 {
+	flex-grow: 1;
+}
+
+.gray {
+	color: #646464;
+}
+
+.filter-location {
+	filter: invert(43%) sepia(20%) saturate(862%) hue-rotate(314deg)
+		brightness(95%) contrast(95%);
+}
+
+.filter-gray {
+	filter: invert(34%) sepia(82%) saturate(0%) hue-rotate(10deg) brightness(91%)
+		contrast(86%);
 }
